@@ -1,0 +1,63 @@
+css
+
+.myForm {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 0.8em;
+        width: 20em;
+        padding: 1em;
+        border: 1px solid #ccc;
+        }
+        
+        .myForm * {
+        box-sizing: border-box;
+        }
+        
+        
+        .myForm input[type="text"],
+        .myForm textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid #ccc;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 0.9em;
+        padding: 0.3em;
+        }
+        
+        .myForm textarea {
+        height: 100px;
+        }
+        
+        .myForm button {
+        padding: 1em;
+        border-radius: 0.5em;
+        background: #eee;
+        border: none;
+        font-weight: bold;
+        margin-top: 1em;
+        }
+        
+        .myForm button:hover {
+        background: #ccc;
+        cursor: pointer;
+        }
+
+
+  <table align="center">
+        <td>
+        
+        <form class="myForm">
+        <p>
+        <label>Nama
+        <input type="text" name="customer_name" required>
+        </label> 
+        </p>
+        <p>
+        <label>Isi Pesan
+        <textarea name="comments" maxlength="500"></textarea>
+        </label>
+        </p>
+        
+        <p><button>Kirim Pesan</button></p>
+        
+        </form>
+        </td></table>
